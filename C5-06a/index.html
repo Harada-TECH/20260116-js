@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>C5-06 ローディング画面 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ローディング用の要素 -->
+  <div id="loading">
+    <!-- <div class="spinner"></div> -->
+     <div class="atom-spinner">
+  <div class="spinner-inner">
+    <div class="spinner-line"></div>
+    <div class="spinner-line"></div>
+    <div class="spinner-line"></div>
+    <!--Chrome renders little circles malformed :(-->
+    <div class="spinner-circle">&#9679;</div>
+  </div>
+</div>
+  </div>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <h1>ローディング画面</h1>
+    <p>HTML + CSS + JavaScript を使って、ローディング画面をシンプルに実装するサンプルコードです。</p>
+
+    <p>ページを開くと画面中央に円が表示され、ローディング画面がフェードアウトし、メインのページが表示される仕組みになっています。</p>
+
+    <img src="img/clock.jpg" alt="時計">
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

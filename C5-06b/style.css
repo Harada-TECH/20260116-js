@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+p {
+  max-width: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ローディング画面のスタイル */
+#loading {
+  /* 全画面を覆う */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* 中央配置 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0bd;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+
+  /* フェードアウトのアニメーション */
+  transition: opacity 1s ease;
+  z-index: 9999;
+}
+
+
+/* ローディング完了時 */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}

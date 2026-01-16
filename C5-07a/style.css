@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+p {
+  max-width: 600px;
+}
+
+#loading {
+  /* background: #0bd; */
+  background: url(pic.jpg) center/cover no-repeat;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+
+.loading-animation {
+  animation: slide 3s ease forwards;
+}
+
+@keyframes slide {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0 1;
+  }
+}
